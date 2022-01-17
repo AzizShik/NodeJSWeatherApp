@@ -18,9 +18,13 @@
   },
   "homepage": "https://github.com/AzizShik/NodeJSWeatherApp#readme",
   "dependencies": {
+    "body-parser": "^1.19.1",
+    "ejs": "^3.1.6",
     "express": "^4.17.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
   }
 }
