@@ -14,8 +14,12 @@
   <div class="app">
     <div class="app__inner">
       <div class="app__header">
-        <h1 class="app__title">Узнать погоду</h1>
-        <p class="app__error">Возникла ошибка</p>
+        <% if (weather) { %>
+        <h1 class="app__title"><%=weather%></h1>
+        <% } %>
+        <% if (error) { %>
+          <p class="app__error"><%=error%></p>
+          <% } %>
       </div>
       <form action="/" method="POST" class="app__form">
         <div class="app__input-block">
